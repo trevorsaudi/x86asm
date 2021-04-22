@@ -18,8 +18,8 @@ _start:
 
     ; now gracefully exit
 
-    mov eax, 0x1            ; 
-    mov ebx, 0
+    mov eax, 0x1            ; use sysexit syscalll
+    mov ebx, 0              ; return 0 like in C programs
     int 0x80
 
 section .data:
